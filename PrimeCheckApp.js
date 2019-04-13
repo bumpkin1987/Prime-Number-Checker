@@ -35,8 +35,8 @@ function isPrimeChecker(num) {
 
   if (
     (num % 2 === 0 && num > 2) ||
-    (num % 3 === 0 && num > 2) ||
-    (num % 5 === 0 && num > 2)
+    (num % 3 === 0 && num > 3) ||
+    (num % 5 === 0 && num > 5)
   ) {
     return isNotPrime;
   }
@@ -58,4 +58,6 @@ function submissionOfUserInput() { // grabs user input makes it equal to var num
   var num = document.getElementById("userInput").value;
   document.getElementById("result").innerHTML = isPrimeChecker(num);
 }
+
+///////////////////////// Alerts invalid input is recieved /////////////////////////////////////////////////////////////
 
