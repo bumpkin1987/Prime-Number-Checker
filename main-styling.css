@@ -1,6 +1,11 @@
+html{
+    background-image: url("chalkboard.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
 body{
-    background-image: url("prime_numbers_pic.jpeg");
-    background-color: rgb(186, 226, 107);
+    
 }
 input[type=text], select {
   width: 100%;
@@ -13,7 +18,7 @@ input[type=text], select {
 }
 input[type=submit] {
     width: 100%;
-    background-color: #4CAF50;
+    background-color: #7a7a7a;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -23,8 +28,18 @@ input[type=submit] {
   }
 button[type=submit] {
     float: center;
+    background-color: #656765;
 }
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #585a58;
   }
-  
+p{
+    text-align: center;
+    font-size: 5em;
+    color: #ffffff;
+}
+.header{
+    text-align: center;
+    font-size: 36x;
+    color: #c7c7c7;
+}

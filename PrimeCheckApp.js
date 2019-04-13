@@ -28,12 +28,10 @@
 
 ///////// Determines if user input is a prime number//////////////////////////////////////////////////////////////////
 
-function isPrimeChecker() {
+function isPrimeChecker(num) {
 
-  var num = document.getElementById("userInput").value;
-  var isPrime = num + ' is a prime number.';
-  var isNotPrime = num + ' is not a prime number.';
-  var results = document.getElementById("result").innerHTML;
+  var isPrime = true.toString().toUpperCase();
+  var isNotPrime = false.toString().toUpperCase();
 
   if (
     (num % 2 === 0 && num > 2) ||
@@ -52,30 +50,12 @@ function isPrimeChecker() {
     }
   }
   return isPrime;
-
 }
 
 /////////////////////////// Takes in user input ////////////////////////////////////////////////////////////////////////
 
 function submissionOfUserInput() { // grabs user input makes it equal to var num
   var num = document.getElementById("userInput").value;
-  return num;
+  document.getElementById("result").innerHTML = isPrimeChecker(num);
 }
 
-// var number = submissionOfUserInput();
-// console.log(number);
-/////////////////////////// Displays results to html ///////////////////////////////////////////////////////////////////
-
-function displayResult(isPrimeChecker) {
-  var results = document.getElementById("result").innerHTML;
-  return results;
-}
-
-
-// function firstFunction() {
-//   // do something
-//   return "testing 123";
-// }
-
-// var test = firstFunction();  // this will grab you the return value from firstFunction();
-// alert(test);

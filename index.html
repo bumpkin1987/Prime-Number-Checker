@@ -5,9 +5,11 @@
 <head>
   <meta charset="utf-8">
   <title>Matt's Prime check</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="This checks a number to see if it is a prime number.">
   <meta name="Matthew Boyles" content="Prime Check">
   <link rel="stylesheet" type="text/css" href="main-styling.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -17,12 +19,14 @@
   <input class="fields" id="userInput" type="text" name="inputfields" value="" placeholder="Number..." />
   <br>
   <br>
-  <input id="buttons" type="submit" onclick="isPrimeChecker()" value="Is it prime?"></input>
+  <input id="buttons" type="submit" onclick="submissionOfUserInput()" value="Is it prime?"></input>
   <br>
   <br>
-  <p id="result" value=isPrimeChecker()></p>
+  <p id="result"></p>
   <br>
-  <br 
+  <br>
+  <br>
+  <br>
   <script src="PrimeCheckApp.js"></script>
 </body>
 </html>
